@@ -1,0 +1,352 @@
+/* Navbar */
+body {
+    background-color: #1F1D28;
+}
+
+.jumbotron {
+    background-color: #1F1D28;
+}
+
+.navbar {
+    background-color: #1F1D28;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-size: 14px;
+    font-family: Righteous;
+}
+
+.nav-link:hover {
+    color: #ffc061 !important;
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #ffc061;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -7px;
+}
+
+
+/* Jumbotron */
+#variasi {
+    position: absolute;
+    margin-bottom: 100px;
+}
+
+#hello {
+    font-family: Raleway;
+    color: #ffc061;
+    font-size: 40px;
+}
+
+#nopi {
+    font-family: Paytone One;
+    font-size: 70px;
+    color: aliceblue;
+    margin-top: -10px;
+}
+
+#jpn {
+    font-family: Noto Serif JP;
+    color: aliceblue;
+    padding-top: 30px;
+}
+
+.col-7 {
+    margin-top: -40px;
+}
+
+
+.btn-link {
+    border: none;
+    color: aliceblue;
+    font-size: 40px;
+    margin-right: -13px;
+}
+
+.fa-envelope {
+    margin-right: 5px;
+}
+
+.btn-outline-primary {
+    border: none;
+    color: aliceblue;
+}
+
+.fa-download {
+    margin-right: 5px;
+}
+
+/* Skill & Tools*/
+#skills {
+    margin-top: -30px;
+}
+
+#tool {
+    color: #ffc061;
+    text-shadow: 0px 0px 20px #A259FF;
+    margin-top: 50px;
+    font-size: 45px;
+}
+
+.tools {
+    color: #1F1D28;
+    font-size: 117px;
+    text-transform: uppercase;
+    font-family: Paytone One;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    opacity: 0.05;
+}
+
+h4 {
+    color: aliceblue;
+}
+
+.progress {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    background-color: #ffc061;
+    width: 0;
+}
+
+.icon {
+    margin-bottom: -10px;
+    color: aliceblue;
+    padding-top: 15px;
+}
+
+
+/*Education*/
+
+#education {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#educa {
+    color: #1F1D28;
+    font-size: 170px;
+    text-transform: uppercase;
+    font-family: Paytone One;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    opacity: 0.05;
+
+}
+
+#edu {
+    color: #ffc061;
+    text-shadow: 0px 0px 20px #A259FF;
+    margin-top: 90px;
+    font-size: 45px;
+}
+
+.card-title {
+    color: aliceblue;
+}
+
+.card-text {
+    color: aliceblue;
+    padding-top: -10px;
+    font-size: small;
+}
+
+/*experience*/
+
+
+
+#suzuki {
+    position: relative;
+    margin-bottom: -50px;
+}
+
+.cards {
+    position: relative;
+    padding-top: 30px;
+    z-index: -1;
+    height: 380px;
+    box-shadow: 0px 0px 10px #A259FF;
+}
+
+#expe {
+    color: #1F1D28;
+    font-size: 180px;
+    text-transform: uppercase;
+    font-family: Paytone One;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    opacity: 0.05;
+}
+
+/*Portfolio*/
+
+
+
+#porto {
+    color: #1F1D28;
+    font-size: 192px;
+    text-transform: uppercase;
+    font-family: Paytone One;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    opacity: 0.05;
+}
+
+#port {
+    color: #ffc061;
+    text-shadow: 0px 0px 20px #A259FF;
+    margin-top: 100px;
+    font-size: 45px;
+}
+
+.cardbox {
+    margin-top: 30px;
+    height: 400px;
+}
+
+.d-block {
+    width: 400px;
+    height: 400px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
+
+
+
+.gambar {
+    width: 250px;
+    height: 220px;
+
+}
+
+/* .container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+} */
+
+.items {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation: carouselAnim 50s infinite alternate linear;
+}
+
+.entry {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    background: #fff;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+    .items {
+        animation: carouselAnim 35s infinite alternate linear;
+    }
+
+    @keyframes carouselAnim {
+        from {
+            transform: translate(0, 0);
+        }
+
+        to {
+            transform: translate(calc(-100% + (2 * 300px)));
+        }
+    }
+}
+
+.entry p {
+    text-align: center;
+    padding: 1em;
+}
+
+.name {
+    font-weight: bold;
+}
+
+@keyframes carouselAnim {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(calc(-100% + (5 * 300px)));
+    }
+}
+
+.faders {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.faders .right,
+.faders .left {
+    background: linear-gradient(to right,
+            rgba(245, 245, 245, 1) 0%,
+            rgba(255, 255, 255, 0) 100%);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 200;
+}
+
+.right {
+    right: 0;
+    background: linear-gradient(to left,
+            rgba(245, 245, 245, 1) 0%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.wraper {
+
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+}
+
+/* Contact */
+
+.contact {
+    margin-top: 70px;
+    font-family: Raleway;
+}
+
+#alamat {
+    color: grey;
+}
+
+#email {
+    color: aliceblue;
+}
+
+footer {
+    border-top-style: solid;
+    border-top-color: rgb(49, 49, 49);
+    text-align: center;
+    padding: 5px;
+    background-color: #1F1D28;
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+#creat {
+    padding-top: 10px;
+}
